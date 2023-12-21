@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         { name: 'tom', img: 'images/tom.jpg' },
         { name: 'tom', img: 'images/tom.jpg' },
-        { name: 'card2', img: 'images/drake.png' },
-        { name: 'card2', img: 'images/drake.png' },
+        { name: 'tesla', img: 'images/tesla.jpg' },
+        { name: 'tesla', img: 'images/tesla.jpg' },
         { name: 'card3', img: 'images/fine.png' },
         { name: 'card3', img: 'images/fine.png' },
         { name: 'card4', img: 'images/rollsafe.png' },
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cardsChosenId.push(cardId);
             this.setAttribute('src', cardArray[cardId].img);
             if (cardsChosen.length === 2) {
-                setTimeout(checkForMatch, 500);
+                setTimeout(checkForMatch, 1000);
             }
         }
     }
